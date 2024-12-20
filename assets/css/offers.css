@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /* background-color: #333; */
+    color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+.offers-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.offers-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #000000;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.offers-section h2:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+
+.offers-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.offer-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    background-color: #333;
+    transition: transform 0.3s;
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.offer-card h3 {
+    margin: 15px 0;
+    color: #ffc400;
+}
+
+.offer-card p {
+    color: #ffffff;
+}
+
+.offer-card button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.offer-card button:hover {
+    background-color: #218838;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}

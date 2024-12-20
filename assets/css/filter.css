@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Filter Section Styling */
+#filter-section {
+  padding: 20px;
+  /* background-color: #aa9090; */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#filter-section h2 {
+  font-size: 1.8rem;
+  color: #ffee00;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Filter Group Styling */
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.filter-group select,
+.filter-group input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filter-group input {
+  margin-bottom: 10px;
+}
+
+/* Apply Filter Button */
+#applyFilter {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#applyFilter:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+}
+
+#applyFilter:active {
+  transform: scale(0.98);
+}
+
+/* Results Section */
+#results {
+  margin-top: 20px;
+}
+
+#results h2 {
+  font-size: 1.6rem;
+  color: #e29402;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#resultsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#resultsList li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#resultsList li:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.02);
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #filter-section {
+    padding: 15px;
+  }
+
+  #applyFilter {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  #results h2 {
+    font-size: 1.4rem;
+  }
+
+  #resultsList li {
+    font-size: 0.9rem;
+  }
+}

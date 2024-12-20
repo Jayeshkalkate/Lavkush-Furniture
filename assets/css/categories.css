@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dddddd;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333333;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 10px 0 0;
+}
+
+/* Filter Section */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#category-filter,
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dynamic-filter {
+  display: none;
+}
+
+.dynamic-filter label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.dynamic-filter select {
+  width: auto;
+}
+
+#price-range {
+  width: 200px;
+}
+
+#price-value {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* Categories Section */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.category {
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.category h3 {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #465347;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #3f443f;
+  color: white;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category {
+    width: 150px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #price-range {
+    width: 100%;
+  }
+
+  .dynamic-filter {
+    width: 100%;
+    text-align: center;
+  }
+}

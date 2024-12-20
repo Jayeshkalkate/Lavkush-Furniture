@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories | Lavkush Furniture</title>
+  <link rel="stylesheet" href="assets/css/categories.css">
+  <style>
+    .categories {
+      background-image: url('assets/images/backgroundimage/categoriesbackgroundimage.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .dynamic-filter {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lavkush Furniture</h1>
+    <p>Explore our wide range of furniture categories</p>
+  </header>
+
+  <main>
+    <!-- Filter Section -->
+    <section class="filters">
+      <div class="filters">
+        <label for="category-filter">Category:</label>
+        <select id="category-filter">
+          <option value="all">All</option>
+          <option value="sofas">Sofas</option>
+          <option value="beds">Beds</option>
+          <option value="chairs">Chairs</option>
+          <option value="tables">Tables</option>
+        </select>
+
+        <!-- Dynamic Filters -->
+        <div id="sofa-filter" class="dynamic-filter">
+          <label for="sofa-options">Sofas:</label>
+          <select id="sofa-options">
+            <option value="sectional">Sectional Sofa</option>
+            <option value="chesterfield">Chesterfield Sofa</option>
+            <option value="sleeper">Sleeper Sofa</option>
+            <option value="loveseat">Loveseat</option>
+            <option value="recliner">Recliner Sofa</option>
+            <option value="tuxedo">Tuxedo Sofa</option>
+            <option value="camelback">Camelback Sofa</option>
+            <option value="bridgewater">Bridgewater Sofa</option>
+            <option value="mid-century-modern">Mid-Century Modern Sofa</option>
+            <option value="contemporary">Contemporary Sofa</option>
+          </select>
+        </div>
+
+        <div id="bed-filter" class="dynamic-filter">
+          <label for="bed-options">Beds:</label>
+          <select id="bed-options">
+            <option value="single">Single Bed</option>
+            <option value="double">Double Bed</option>
+            <option value="queen">Queen Bed</option>
+            <option value="king">King Bed</option>
+            <option value="bunk">Bunk Bed</option>
+            <option value="storage">Storage Bed</option>
+            <option value="murphy">Murphy Bed</option>
+            <option value="divan">Divan Bed</option>
+            <option value="ottoman">Ottoman Bed</option>
+            <option value="folding">Folding Bed</option>
+          </select>
+        </div>
+
+        <div id="chair-filter" class="dynamic-filter">
+          <label for="chair-options">Chairs:</label>
+          <select id="chair-options">
+            <option value="dining">Dining Chair</option>
+            <option value="armchair">Armchair</option>
+            <option value="recliner">Recliner Chair</option>
+            <option value="accent">Accent Chair</option>
+            <option value="lounge">Lounge Chair</option>
+            <option value="office">Office Chair</option>
+            <option value="gaming">Gaming Chair</option>
+            <option value="rocking">Rocking Chair</option>
+            <option value="folding">Folding Chair</option>
+            <option value="bar-stool">Bar Stool</option>
+          </select>
+        </div>
+
+        <div id="table-filter" class="dynamic-filter">
+          <label for="table-options">Tables:</label>
+          <select id="table-options">
+            <option value="dining">Dining Table</option>
+            <option value="coffee">Coffee Table</option>
+            <option value="side">Side Table</option>
+            <option value="console">Console Table</option>
+            <option value="study">Study Table</option>
+            <option value="end">End Table</option>
+            <option value="center">Center Table</option>
+            <option value="nesting">Nesting Table</option>
+            <option value="folding">Folding Table</option>
+            <option value="bar">Bar Table</option>
+          </select>
+        </div>
+
+        <label for="price-range">Price Range:</label>
+        <input type="range" id="price-range" min="500" max="100000" step="500">
+        <span id="price-value">Up to ₹100000</span>
+
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="category" data-category="sofas" data-price="20000">
+        <img src="assets/images/categories/sofaimage.png" alt="Sofas">
+        <h3>Sofas</h3>
+      </div>
+      <div class="category" data-category="beds" data-price="30000">
+        <img src="assets/images/categories/bedimage.png" alt="Beds">
+        <h3>Beds</h3>
+      </div>
+      <div class="category" data-category="chairs" data-price="15000">
+        <img src="assets/images/categories/chairimage.png" alt="Chairs">
+        <h3>Chairs</h3>
+      </div>
+      <div class="category" data-category="tables" data-price="18000">
+        <img src="assets/images/categories/tableimage.png" alt="Tables">
+        <h3>Tables</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Lavkush Furniture. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/categories.js"></script>
+</body>
+</html>
