@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f7e4d0, #f3d6bd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.account-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #663300;
+}
+
+.logo span {
+    color: #cc6600;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #663300;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.btn {
+    background: #cc6600;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #994d00;
+}
