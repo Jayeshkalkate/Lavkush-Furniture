@@ -16,9 +16,12 @@ db_config = {
 @app.route('/register', methods=['POST'])
 def register():
     data = request.json
-    name = data['name']
-    email = data['email']
-    password = data['password']
+    name = data.get('name')
+    email = data.get('email')
+    password = data.get('password')
+
+    if not name or not email or not password:
+        return jsonify({'message': 'All fields are required'}), 400
 
     conn = mysql.connector.connect(**db_config)
     cursor = conn.cursor()
@@ -30,6 +33,8 @@ def register():
         return jsonify({'message': 'Registration successful'}), 201
     except mysql.connector.IntegrityError:
         return jsonify({'message': 'Email already exists'}), 409
+    except mysql.connector.Error as err:
+        return jsonify({'message': f'Error: {str(err)}'}), 500
     finally:
         cursor.close()
         conn.close()
